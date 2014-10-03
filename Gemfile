@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.2'
 gem 'pg'
 gem 'uglifier'
+gem 'sass-rails', '~> 4.0.3'
 gem 'jquery-rails'
+gem 'turbolinks'
 gem 'devise'
 gem 'rest_client'
 gem 'bootstrap-sass'
@@ -38,6 +40,7 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
+  gem 'newrelic_rpm'
   gem 'bugsnag'
   gem 'lograge'
 end
