@@ -9,10 +9,11 @@
     <%= f.hidden_field :latitude, class: "form-control", id: "lat" %>
     <%= f.hidden_field :longitude, class: "form-control", id: "lon" %>
 
-  <%= f.submit "Submit", class: "btn btn-lg btn-primary" %>
+  <%= f.submit "Submit", class: "btn btn-lg btn-primary", id: "messageSubmit" %>
 <% end %>
 
 <script type="text/javascript">
+  $('#messageSubmit').hide()
    var current_lat;
    var current_lon;
 
@@ -33,6 +34,7 @@
         current_lon = location.coords.longitude;
         $("#lat").val(current_lat);
         $("#lon").val(current_lon);
+        $('#messageSubmit').show()
         console.log("Retrieved user's location: [" + current_lat + ", " + current_lon + "]");
       }
 

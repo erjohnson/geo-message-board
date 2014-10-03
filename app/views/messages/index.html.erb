@@ -1,4 +1,4 @@
-<%= link_to "New Message", new_message_path, class: "btn btn-large btn-info" %>
+<%= link_to "New Message", new_message_path, class: "btn btn-large btn-info", id: "new_message_link", remote: true %>
 <br>
 <ul>
 <%= render @messages %>
