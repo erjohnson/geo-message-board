@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
 group :development do
-  gem 'spring'
+  # gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'quiet_assets'
