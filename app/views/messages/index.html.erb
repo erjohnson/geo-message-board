@@ -1,5 +1,10 @@
-<%= link_to "New Message", new_message_path, class: "btn btn-large btn-info", id: "new_message_link", remote: true %>
-<br>
-<ul>
-<%= render @messages %>
-<ul>
+<hr>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="text-center">
+    <%= link_to "New Message", new_message_path, class: "btn btn-large btn-info", id: "new_message_link", remote: true %>
+    </div>
+    <br>
+    <%= render @messages %>
+  </div>
+</div>
