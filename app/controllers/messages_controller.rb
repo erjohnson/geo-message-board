@@ -23,6 +23,6 @@ class MessagesController < ApplicationController
 
 private
   def message_params
-    params.require(:message).permit(:content).merge(latitude: current_user.latitude, longitude: current_user.longitude)
+    params.require(:message).permit(:content).merge(user_id: current_user.id, latitude: current_user.latitude, longitude: current_user.longitude)
   end
 end

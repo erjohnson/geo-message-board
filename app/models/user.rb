@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   validates_presence_of :name
 
   reverse_geocoded_by :latitude, :longitude
+
+  has_many :messages
 end
