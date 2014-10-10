@@ -40,8 +40,8 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'unicorn'
-  gem 'newrelic_rpm'
-  gem 'bugsnag'
-  gem 'lograge'
+  # gem 'unicorn'
+  # gem 'newrelic_rpm'
+  # gem 'bugsnag'
+  # gem 'lograge'
 end
