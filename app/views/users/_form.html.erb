@@ -1,3 +1,5 @@
+<p id="loader">Loading...</p>
+
 <%= form_for @user, html: {class: "form"}, remote: true do |f| %>
   <%= render 'layouts/errors', :object => @user %>
 
@@ -9,9 +11,10 @@
 
 <script type="text/javascript">
 
-  $('#findMeSubmit').hide()
-   var current_lat;
-   var current_lon;
+  $('#findMeSubmit').hide();
+  $('#loader').show();
+  var current_lat;
+  var current_lon;
 
    (function() {
       /* Uses the HTML5 geolocation API to get the current user's location */
@@ -30,6 +33,7 @@
         current_lon = location.coords.longitude;
         $("#lat").val(current_lat);
         $("#lon").val(current_lon);
+        $("#loader").remove();
         $('#findMeSubmit').show();
         console.log("Retrieved user's location: [" + current_lat + ", " + current_lon + "]");
       }
