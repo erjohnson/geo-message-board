@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
 
   def index
     @user = User.find(current_user.id)
-    @messages = Message.all
+    @messages = Message.near([@user.latitude, @user.longitude], 0.1, :units => :km)
   end
 
   def new
