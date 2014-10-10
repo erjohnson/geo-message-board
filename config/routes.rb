@@ -3,6 +3,5 @@ Rails.application.routes.draw do
   root 'messages#index'
 
   resources :messages
-  resources :current_locations
   resources :users
 end
