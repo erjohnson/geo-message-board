@@ -15,3 +15,11 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#new_message_link {
+  display: none;
+}
+
+#findMeSubmit {
+  display: none;
+}

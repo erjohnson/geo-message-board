@@ -1,3 +1,6 @@
+// var current_lat;
+// var current_lon;
+
 // (function() {
 //   /* Uses the HTML5 geolocation API to get the current user's location */
 //   var getLocation = function() {
@@ -11,9 +14,10 @@
 
 //   /* Callback method from the geolocation API which receives the current user's location */
 //   var geolocationCallback = function(location) {
-//     var latitude = location.coords.latitude;
-//     var longitude = location.coords.longitude;
-//     console.log("Retrieved user's location: [" + latitude + ", " + longitude + "]");
+//     current_lat = location.coords.latitude;
+//     current_lon = location.coords.longitude;
+
+//     console.log("Retrieved user's location: [" + current_lat + ", " + current_lon + "]");
 //   }
 
 //   /* Handles any errors from trying to get the user's current location */
